@@ -14,15 +14,27 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(400, 300)
+        Form.resize(800, 600)
         self.textEdit = QtWidgets.QTextEdit(Form)
-        self.textEdit.setGeometry(QtCore.QRect(10, 10, 371, 211))
+        self.textEdit.setGeometry(QtCore.QRect(20, 20, 751, 471))
+        font = QtGui.QFont()
+        font.setFamily("方正舒体")
+        font.setPointSize(15)
+        self.textEdit.setFont(font)
         self.textEdit.setObjectName("textEdit")
         self.show_pushButton = QtWidgets.QPushButton(Form)
-        self.show_pushButton.setGeometry(QtCore.QRect(50, 240, 91, 31))
+        self.show_pushButton.setGeometry(QtCore.QRect(90, 510, 181, 61))
+        font = QtGui.QFont()
+        font.setFamily("Chiller")
+        font.setPointSize(30)
+        self.show_pushButton.setFont(font)
         self.show_pushButton.setObjectName("show_pushButton")
         self.next_pushButton_2 = QtWidgets.QPushButton(Form)
-        self.next_pushButton_2.setGeometry(QtCore.QRect(240, 240, 91, 31))
+        self.next_pushButton_2.setGeometry(QtCore.QRect(510, 510, 181, 61))
+        font = QtGui.QFont()
+        font.setFamily("Chiller")
+        font.setPointSize(30)
+        self.next_pushButton_2.setFont(font)
         self.next_pushButton_2.setObjectName("next_pushButton_2")
 
         self.retranslateUi(Form)
@@ -31,5 +43,5 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.show_pushButton.setText(_translate("Form", "Show meaning"))
+        self.show_pushButton.setText(_translate("Form", "Definition"))
         self.next_pushButton_2.setText(_translate("Form", "Next"))
